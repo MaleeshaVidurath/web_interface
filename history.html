@@ -16,13 +16,13 @@
 </head>
 
 <body>
-    <script src="test.js"></script>
+    <script src="script.js"></script>
     <div class="dashboard_container">
 
         <div class="dashboard-center-container">
 
             <div class="container dashboard-shadow-container">
-                <h1>{{ name }}</h1>
+                <h1 id="variable">http://167.71.198.111:5000/769246233</h1>
                 <div class="row"><!--Main container-->
                     <div class="col-md-2"><!--menu section-->
                         <ul class="nav flex-column">
@@ -44,56 +44,27 @@
                     </div>
 
                     <!--History panel section-->
-                    
-                            <script>
-                               /*fetch('http://167.71.198.111:5000/769246233')
-                                  .then(res => {
-                                    return res.json();
-                                  })
-                                  .then(data => {
-                                    Object.entries(data).forEach(([key, value]) => {
-                                      const markup = `<td>${value}</td>`;
-                                      const tdElement = document.querySelector('#your-id');
-                                      if (tdElement) {
-                                        tdElement.insertAdjacentHTML('beforeend', markup);
-                                      }
-                                    });
-                                  })
-                                  .catch(error => console.log(error));*/
-                              </script>
-                              <script type="module">
-                                
-                              var test;
-                              test=await yval('http://167.71.198.111:5000/769246233');
-                              console.log(test);
 
-                              document.write(test);
-                              //html
-                              <div class="col-md-10">
-                        <table class="separate"width="100%">
-                            <tr class="tab">
+                    <div class="col-md-10">
+                        <table class="separate"width="80%">
+                            <tr class="tabs">
                                 <td>Day No</td>
                                 <td>Date</td>
                             </tr>
 
                     
                            <tr class="tabs">
-                                <td></td>
+                                <tbody class="tabs" id="dynamicContent"></tbody>
                             </tr>
                             </table>
                         </div>
-                              </script>
-                              
-
-                           
-                              
-
                     
                 </div>
 
             </div>
         </div>
     </div>
+   
 </body>
 
 </html>
